@@ -1,0 +1,22 @@
+{
+    "name": "Node.js & TypeScript",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+    "features": {
+        "ghcr.io/devcontainer-community/devcontainer-features/zellij.dev:1": {}
+    },
+    "updateContentCommand": {
+        "claude": "curl -fsSL https://claude.ai/install.sh | bash"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "biomejs.biome",
+                "Anthropic.claude-code"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "zsh",
+                "editor.defaultFormatter": "biomejs.biome"
+            }
+        }
+    }
+}
